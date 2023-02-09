@@ -47,7 +47,7 @@ public class NotesProgram {
             try {
                 File fobj=new File("Notes.txt");
                 FileWriter fwr=new FileWriter("Notes.txt",true);
-                fwr.write("{"+"Subject="+tsub.getText()+", Title="+ttit.getText()+" ,Subtit="+tsubtit.getText()+" ,Brif_notes="+tnot.getText()+"}"+"\n");
+                fwr.write("{"+"Subject="+tsub.getText()+", Title="+ttit.getText()+" ,Subtitle="+tsubtit.getText()+" ,Brif_notes="+tnot.getText()+"}"+"\n");
                 fwr.close();
                 tsub.setText("");ttit.setText("");tsubtit.setText("");tnot.setText("");
                 JOptionPane.showMessageDialog(fram,"your notes successfully save my platform!");
