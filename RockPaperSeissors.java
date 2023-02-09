@@ -18,7 +18,7 @@ import javax.swing.JFrame;
  static String random(){
             String arr[]={"rock","paper","scissor"};
             Random ran=new Random();
-            int index=ran.nextInt(arr.length);
+            int index=(int)(Math.random()*(3)+0);
             String st=arr[index]; 
                return st;
            } 
